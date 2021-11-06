@@ -1,0 +1,197 @@
+@font-face{font-family: "ink";
+src: url('font/AlloyInk-lgdWw.otf');
+}
+@font-face{font-family: "baby";
+src: url('font/ShortBaby-Mg2w.ttf');
+}
+@font-face{font-family: "regular";
+src: url('font/ZCOOLKuaiLe-Regular.ttf');}
+@font-face{font-family:"festival";
+src: url('font/Festive-Regular.ttf');
+}
+header {
+  position:sticky; 
+  top:0; 
+  padding:3px;
+  width:100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  text-align: center;
+  background-color: #6c6e6d;
+  color: black;
+
+}
+  body,
+  h1,
+  h2,
+  h4,
+  h5,
+  h6 {
+      font-family: "Roboto", sans-serif;
+  }
+  h3 {text-align: center;
+    font-family:"regular";
+      font-size: 80px;
+      word-spacing: 80px;
+    }
+  p {
+    text-indent: 50px  ;
+    font-size: 20px;
+  }
+  body,
+  html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+  }
+
+  /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .bgimg-2 {
+      background-image: url("/w3images/parallax2.jpg");
+      min-height: 400px;
+  }
+  .button {
+    padding: 15px 50px;
+    margin: 10px 4px;
+    margin-top: 100px;
+    color: rgb(99, 97, 97);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+  }
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transform: scaleY(.1);
+    transform: scaleY(.1);
+    transition: all .4s
+  }
+  .button:hover {
+    color: #e9c80c;
+  }
+  .button:hover::before {
+    opacity: 1;
+    background-color: #6c6e6d;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  }
+  .qi{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-right: 10%;
+  }
+  .qi:hover{
+      color: lightcoral;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    align-self: center;
+  }
+  img {
+    width: 320px;
+    height: 450px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #cfcfcc;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(117, 29, 66);
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+ 
+  .important {
+      display: inline-block;
+      position: relative;
+     font-family: "festival";
+     text-align: center;
+     font-size: 40px;
+  }
+  .thing img.image{
+    width: 450px;
+    height: 550px;
+   position :relative;
+   display:inline-block;
+   margin-right: 0pt;
+  }
+  
+  
+  .thing:hover img.image{
+    display: none ; 
+  }
+  .thing img.hover{
+      display:none;
+  }
+  .thing:hover img.hover{
+      display:block;
+  }
+
+  
+  .hobby{
+    text-align: center;
+    font-size:30px;
+   background-color: rgb(168, 209, 207); color:rgb(100, 7, 22);
+   width: 100%;
+    padding: 20px;
+    display: inline-block;
+ 
+ }
+ .container1{
+   block-size: 25%;
+   padding:30px;
+   font-size: large;
+   color:midnightblue;
+ }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  width:100%;
+  background-color: #6c6e6d;
+  color: black;
+ 
+} 
