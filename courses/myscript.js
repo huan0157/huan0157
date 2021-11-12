@@ -13,13 +13,24 @@ function mySearch() {
             li[i].style.display = "none";
         }
     }
-}
+/*var defaultText = "Search..."; var searchBox = document.getElementById("search"); 
+//default text after load 
+searchBox.value = defaultText; 
+//on focus behaviour 
+searchBox.onfocus = function() 
+{ if (this.value == defaultText) {
+  //clear text field
+   this.value = ''; } } 
+  //on blur behaviour 
+  searchBox.onblur = function() { if (this.value == "") {
+    //restore default text 
+    this.value = defaultText; } }
 
     //When the user clicks on the button, toggle between hiding and showing the dropdown content
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
-    
+    */
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
@@ -32,4 +43,4 @@ function mySearch() {
           }
         }
       }
-    }
+    }}

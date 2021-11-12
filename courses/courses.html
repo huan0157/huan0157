@@ -22,15 +22,11 @@
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>My Courses</b></h1>
-    <input type="text" id="myInput" onkeyup="mySearch()" placeholder="Search for course.." title="Type in a name">
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">sort</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="Acesent">Sort level Acesent</a>
-          <a href="Descend">Sort level Descend</a>
+    <input type="text" name="search" id="search" value="" onkeyup="myFunction()" placeholder="search my courses"/> <input type="submit" name="submit" value="Search" /> 
+    
+      
           
-        </div>
-      </div>
+      
       <div>
         <div class="home"><a href=../home/index.html> <i class="fas fa-home"></i><span>Home</span></a></div>
       </div>
@@ -39,35 +35,41 @@
       <button class="w3-button w3-black">ALL</button>
       <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Level 1</button>
       <button class="w3-button w3-white w3-hide-small"><i class="fa fa-unlock-alt w3-margin-right"></i>Level 2</button>
-     
+      <button onclick="myFunction()" class="dropbtn">sort</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="Acesent">Sort level Acesent</a>
+          <a href="Descend">Sort level Descend</a>
      
     </div>
     </div>
   </header>
   
-  
+<ul id="myCourse">
 <div class=level1>
     <!-- First Photo Grid-->
     <div class="w3-row-padding">
-      <div class="w3-third w3-container w3-margin-bottom">
+      <li><a href="#"><div class="w3-third w3-container w3-margin-bottom">
       <img src="database1.jpg" alt="database1"  >
        <div class="w3-container w3-white">
-        <p ><b>CST8215 -- introduction to Database  Level 1</b></p>
+        <p ><b>CST8215 -- introduction to Database </b></p>
         <p>Students learn the fundamentals of Relational Databases design using Entity Relation diagrams, and use SQL to create, modify and query a database. Students design and create databases that are maintainable, secure and adaptable to change in business requirements, using Normalization. Students are able to compare and appreciate a Database Management System (DBMS) and its components with legacy systems.</p>
        </div>
       </div>
+    </a></li>
+    <li><a href="#">  
       <div class="w3-third w3-container w3-margin-bottom">
        <img src="programmings.jpg" alt="Java1" >
         <div class="w3-container w3-white">
-        <p ><b>CST8116 -- Intro to Computer Programming  Level 1</b></p>
-        <p>Possessing the fundamentals of logic, problem-solving and programming language structure provides a solid foundation for further study in the field. Students develop introductory knowledge of computer programming with emphasis on problem analysis and design,  with the Java programming language used as a means to implement problem solution designs.<br><br> </p>
+        <p ><b>CST8116 -- Intro to Computer Programming </b></p>
+        <p>Possessing the fundamentals of logic, problem-solving and programming language structure provides a solid foundation for further study in the field. Students develop introductory knowledge of computer programming with emphasis on problem analysis and design,  with the Java programming language used as a means to implement problem solution designs. </p>
        </div>
       </div>
-      
+    </a></li> 
+    <li><a href="#">  
      <div class="w3-third w3-container">
        <img src="information.jpg" alt="Essential" >
        <div class="w3-container w3-white">
-        <p ><b>CST8101 -- Computer Essentials  Level 1</b></p>
+        <p ><b>CST8101 -- Computer Essentials </b></p>
         <p>The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills. Install and configure the Windows Operating System, and a virtual machine environment. Explore computer organization including basic numerical systems, functional hardware and software components needed to run programs.<br><br></p>
        </div>
      </div>
@@ -75,13 +77,15 @@
   
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
+    <li><a href="#"></a><div class="w3-third w3-container w3-margin-bottom">
       <img src="math.jpg" alt="Math" >
       <div class="w3-container w3-white">
         <p ><b>MAT8001C -- Math for Computer Science  </b></p>
         <p>Students manipulate algebraic expressions, solve algebraic equations and linear systems and learn the properties of and graph algebraic and transcendental functions. Students investigate computer number systems in addition to Boolean algebra and logic to help solve problems involving computer systems. Students also study the addition and subtraction of vectors using vector components. </p>
       </div>
     </div>
+  </a></li> 
+  <li><a href="#"> 
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="communication.jpg" alt="Communication" >
       <div class="w3-container w3-white">
@@ -89,6 +93,8 @@
         <p>Communication remains an essential skill sought by employers, regardless of discipline or field of study. Using a practical, vocation-oriented approach, students focus on meeting the requirements of effective communication. Students develop and strengthen communication skills that contribute to success in both educational and workplace environments.<br><br></p>
       </div>
     </div>
+  </a></li> 
+  <li><a href="#"> 
     <div class="w3-third w3-container">
       <img src="success.jpg" alt="Success" >
       <div class="w3-container w3-white">
@@ -96,54 +102,66 @@
         <p>Life in the 21st century presents significant opportunities, but it also creates potential hazards and ethical problems that demand responsible solutions. Students explore the possibilities ahead, assess their own aptitudes and strengths, and apply critical thinking and decision-making tools to help resolve some of the important issues in our complex society with its competing interests.</p>
       </div>
     </div>
+  </a></li>
   </div>
 </div>
 <div class=level2>
    <!-- First Photo Grid-->
     <div class="w3-row-padding">
+      <li><a href="#">
       <div class="w3-third w3-container w3-margin-bottom">
        <img src="java2.jpg" alt="java2">
         <div class="w3-container w3-white">
-        <p ><b>CST8284 -- Object Oriented Programming  Level 2</b></p>
-        <p>Learn object oriented programming methodology using the Java programming language. Object oriented concepts, such as encapsulation, inheritance, abstraction and polymorphism are covered and reinforced with practical applications.<br><br><br><br> </p>
+        <p ><b>CST8284 -- Object Oriented Programming </b></p>
+        <p>Learn object oriented programming methodology using the Java programming language. Object oriented concepts, such as encapsulation, inheritance, abstraction and polymorphism are covered and reinforced with practical applications.<br><br><br><br><br> </p>
        </div>
       </div>
+    </a></li> 
+    <li><a href="#">
       <div class="w3-third w3-container w3-margin-bottom">
       <img src="database3.jpg" alt="Database2" >
        <div class="w3-container w3-white">
-        <p ><b>CST2355 -- Database System  Level 2</b></p>
+        <p ><b>CST2355 -- Database System  </b></p>
         <p>Students obtain hands-on experience with advanced engineering modeling tools along with SQL, SQL scripts and programming with Oracle's PL/SQL blocks. Database concepts covered include advanced SQL, case structures, rollup and cube operations, metadata manipulation, data storage and retrieval, security and transaction control and data warehousing. Open source database software is also explored.</p>
        </div>
       </div>
-     <div class="w3-third w3-container">
+    </a></li> 
+    <li><a href="#">
+     <div class="w3-third w3-container w3-margin-bottom">
        <img src="Linux2.jpg" alt="Linux" >
        <div class="w3-container w3-white">
-        <p ><b>CST8102 -- Operating System (GNU/Linux)  Level 2</b></p>
-        <p>Learn the basic concepts and components of Operating Systems (OS), and how they function and interact with hardware and software components. Explore the details of operating system structures, process management, storage management, installation, configuration, and administration both in theory and through practical assignments based on the GNU/Linux operating system.<br><br> </p>
+        <p ><b>CST8102 -- Operating System (GNU/Linux) </b></p>
+        <p>Learn the basic concepts and components of Operating Systems (OS), and how they function and interact with hardware and software components. Explore operating system structures, process management, storage management, installation, configuration, and administration both in theory and through practical assignments based on the GNU/Linux operating system.<br> </p>
        </div>
      </div>
+    </a></li> 
+    
     </div>
   
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
+    <li><a href="#"></a>
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="web.png" alt="Web">
       <div class="w3-container w3-white">
-        <p ><b>CST8285 -- Web programming Level 2</b></p>
-        <p>Learn the basics of web programming, website design and implementation. JavaScript, HTML5, and PHP are used to explore web-based solutions to problems of increasing interactivity and complexity. Lectures are reinforced by practical assignments that encourage students to construct and maintain their own websites.<br><br><br> </p>
+        <p ><b>CST8285 -- Web programming </b></p>
+        <p>Learn the basics of web programming, website design and implementation. JavaScript, HTML5, and PHP are used to explore web-based solutions to problems of increasing interactivity and complexity. Lectures are reinforced by practical assignments that encourage students to construct and maintain their own websites.<br><br></p>
       </div>
     </div>
+  </a></li> 
+  <li><a href="#">
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="coop.jpg" alt="CO-OP" >
       <div class="w3-container w3-white">
-        <p ><b>GEP1001 -- Cooperative Education Level 2</b></p>
+        <p ><b>GEP1001 -- Cooperative Education </b></p>
         <p>Through a detailed orientation, students learn the cooperative education program policies and procedures related to searching and securing a work term opportunity. Students identify their strengths and transferable skills and participate in workshop style sessions that focus on cover letter and resume development, interview techniques and job search strategies.</p>
       </div>
     </div>
-    
+  </a></li> 
+ 
   </div>
 </div>
-  
+
 </body>
 <footer class=footer>
   <p>Author: Qi Huang<br>
